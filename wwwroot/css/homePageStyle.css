@@ -2,4 +2,97 @@
     background-image: url("../images/main-page-img.jpg");
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
 }
+
+    body .home-main input{
+        padding:20px;
+        width: 50%;
+        border-radius:5px;
+        font-size: 20px;
+        font-weight: 400;
+        border:none
+    }
+
+    body .home-main input:focus{ 
+  
+        background-color: lightcyan;
+    }
+
+    body .home-main .search{
+        position: relative;
+        left: -60px;
+        width: 30px;
+        height:30px
+  
+    }
+
+    body .home-main .search:hover{
+        cursor: pointer
+    }
+
+body .home-main-two{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding:50px 50px;
+   
+}
+
+    body .home-main-two .lists {
+        box-sizing: border-box;
+        width: 30%;
+        height: 500px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 5px gray;
+        transition: 0.2s;
+    }
+
+    body .home-main-two .list1:hover {
+       box-shadow: 0 0 10px gray;
+       cursor: pointer
+    }
+
+    body .home-main-two .list2:hover {
+        box-shadow: 0 0 10px gray;
+        cursor: pointer
+    }
+
+    body .home-main-two .list3:hover {
+        box-shadow: 0 0 10px gray;
+        cursor: pointer
+    }
+
+    body .home-main-two .lists img{
+        width: 80%;
+        height: 40%;
+     
+    }
+
+    body .home-main-two .lists p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    body .home-main-two .lists button {
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #2F7D4F;
+        font-size:18px;
+        margin-top: 20px;
+    }
+
+    body .home-main-two .lists button:hover {
+        cursor: pointer;
+        background-color: #2F7D4F;
+        color: white;
+    }
