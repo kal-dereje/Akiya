@@ -1,0 +1,5 @@
+﻿body .home-main {
+    background-image: url("../images/main-page-img.jpg");
+    background-size: cover;
+    height: 100vh;
+}

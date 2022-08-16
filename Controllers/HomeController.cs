@@ -23,5 +23,15 @@ namespace Akiya.Controllers
             return View();
         }
 
+        public IActionResult Sell()
+        {
+            return View();
+        }
+
+        public IActionResult Rent()
+        {
+            return View();
+        }
+
     }
 }

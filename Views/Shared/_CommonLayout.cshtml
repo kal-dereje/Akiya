@@ -4,18 +4,31 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/homePageStyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <div class="logo">Brand name & Logo;   </div>
+        <div class="logo">
+            <img class="logo-img" src="~/images/logo/logo.png"/> 
+            <h1>AkiYa</h1>
+        </div>
         <div class="nav">
-            <div class="items item1">Buy</div>
-            <div class="items item2">Sell</div>
-            <div class="items item3">Rent</div>
-            <div class="items item4">Log in</div>
-            <div class="items item5">Sign up</div>
+            <div class="items item1"><a href="/home/index" >Home</a></div>
+            <div class="items item2"><a href="home/" >About us</a></div>
+            <div class="items item3"><a href="home/" >Buy</a></div>
+            <div class="items item4"><a href="/home/sell" >Sell</a></div>
+            <div class="items item5"><a href="/home/rent" >Rent</a></div>
+           
+        </div>
+
+        <div class="nav">
+             <div class="items item6"><a href="#">Sign in</a></div>
+             <div class="items item7"><a href="#">Sign up</a></div>
         </div>
     </header>
 

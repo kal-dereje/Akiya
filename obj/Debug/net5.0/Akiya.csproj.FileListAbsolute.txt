@@ -393,5 +393,7 @@ C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\bin\Debug\net5.0\zh
 C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
 C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\obj\Debug\net5.0\Razor\Views\Shared\_CommonLayout.cshtml.g.cs
+C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\obj\Debug\net5.0\Razor\Views\Home\Sell.cshtml.g.cs
+C:\Users\kalab dereje\Desktop\House sell and buy\Akiya\Akiya\obj\Debug\net5.0\Razor\Views\Home\Rent.cshtml.g.cs
