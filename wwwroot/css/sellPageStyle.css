@@ -1,0 +1,86 @@
+﻿
+
+.sell-container .section-one, 
+.sell-container .section-two {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-inline:50px
+}
+
+    .sell-container .section-one .section-one-left, .sell-container .section-one .section-one-right,
+    .sell-container .section-two .section-two-left, .sell-container .section-two .section-two-right {
+        width: 40%;
+        flex: 1 1 40%;
+        padding: 80px;
+
+    }
+
+    .sell-container .section-two{
+        padding-top: 0
+    }
+     .sell-container .section-two .section-two-left, .sell-container .section-two .section-two-right{
+         padding-top: 0px;
+        
+         
+     }
+
+ul li {
+    font-weight: 100;
+   
+}
+
+    .sell-container .section-one .section-one-left button {
+        margin-top: 60px;
+        padding: 10px 40px;
+        border: 1px solid #6E947E;
+        border-radius: 5px;
+        background: #F0F0F0
+
+    }
+
+    .sell-container .section-one .section-one-left button a{
+        text-decoration: none;
+        color: #6E947E;
+        font-weight:100;
+        font-size:15px
+
+
+    }
+
+
+
+    .sell-container .section-one .section-one-right img{
+        height:300px
+    }
+
+
+.sell-container .section-three form{
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 50px
+    
+}
+    .sell-container .section-three form div input,
+    .sell-container .section-three form div .select{
+        display: block;
+        width: 400px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #6DA986;
+        margin-block: 10px;
+        font-weight: 100;
+        font-size: 18px
+    }
+
+    .sell-container .section-three form div button{
+        padding: 10px;
+        width:100px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+
+    }
+
+
+
+

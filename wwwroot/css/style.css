@@ -31,6 +31,7 @@
 
 
 body header {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,6 +43,11 @@ body header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+    }
+
+    body header .logo:hover{
+        cursor:pointer
     }
 
     body header .logo h1 {
@@ -101,3 +107,133 @@ body header {
 
 
 
+/*footer style*/
+
+
+footer, footer .footer-one .footers {
+    display: flex;
+    flex-direction: column;
+
+}
+
+    footer .footer-one, footer .footer-two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6E947E;
+        width: 100%
+    }
+
+    footer .footer-one .footers{
+       
+       
+        margin: 80px;
+        margin-inline:100px;
+
+        gap: 20px;
+       
+    }
+    footer .footer-one .footers div{
+        display: flex;
+        justify-content: space-between;
+        font-size:30px;
+
+    }
+    footer .footer-one .footers  p{
+        font-size: 17px
+    }
+
+    footer .footer-two {
+        background: #627059;
+        width: 100%;
+        color: white
+    }
+
+
+body .modal {
+    position:fixed;
+    width:100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    top:0;
+    
+    
+}
+
+body .modal .login ,
+body .modal .sign-up{
+    display: none;
+    height: 80%;
+    width:25%;
+    background:white;
+    border-radius: 5px;
+    padding: 30px;
+ 
+}
+body .modal .login .intro,
+body .modal .sign-up .intro{
+    text-align: center
+}
+
+
+body .modal .login a,
+body .modal .sign-up a{
+    position:relative;
+    left: 96%
+}
+
+body .modal .login a:hover,
+body .modal .sign-up a:hover{
+    cursor: pointer
+}
+
+
+body .modal .login form,
+body .modal .sign-up form{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+body .modal .login form input,
+body .modal .sign-up form input{
+    display: block;
+    margin-block:20px;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 16px
+}
+
+
+body .modal .login form button,
+body .modal .sign-up form button{
+    padding: 10px;
+    margin-block: 20px
+    }
+
+body .modal .login form button:hover,
+body .modal .sign-up form button:hover{
+    cursor: pointer;
+}
+
+#profile {
+    font-size: 35px;
+    margin-right: 25px
+}
+
+body .profile-option{
+
+    position: absolute;
+    right: 120px;
+    top: 80px;
+    width: 100px;
+    height: 100px;
+    background-color:  lightgray;
+    border-radius: 5px;
+    text-align:center;
+    padding-top: 20px;
+    display: none;
+}
