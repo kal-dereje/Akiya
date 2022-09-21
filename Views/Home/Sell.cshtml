@@ -4,7 +4,78 @@
     Layout = "~/Views/Shared/_CommonLayout.cshtml";
 }
 
-<h1>Sell</h1>
 
 
-<h1>Sell page</h1>
+<div class="sell-container">
+
+    <div  class="section-one">
+        <div class="section-one-left">
+            <h1>Sell your home yourself</h1>
+            <p style="font-weight: 100; margin-top: 20px">Deciding to sell your home yourself is referred to as for-sale-by-owner (FSBO). The FSBO process is similar to traditonal selling, but without the help of a real estate agent. In this case, your're responsible for the home prep, marketing, showings, and negotiations</p>
+            <button><a href="#post">Post your home for sell</a> </button>
+        </div>
+        <div class="section-one-right">
+            <img src="/images/sell.png" />
+        </div>
+    </div>
+
+
+    <div  class="section-two">
+        <div  class="section-two-left">
+            <h1>Why sell FSBO</h1>
+            <ul >
+                <li >Avoiding paying a listing agent commission</li>
+                <li>Advertise your listing for free on AkiYA</li>
+                <li>Flexibility and control from start to finish</li>
+            </ul>
+        </div>
+
+        <div  class="section-two-right">
+           <h1>How to sell FSBO</h1>
+            <p style="font-weight: 100; margin-top: 20px">When selling yourself, start with home prep, staging, and hiring a professional photographer. Once your marketing materials are ready, research comparable homes to help price your home. Then, create a listing on AkiYA. You’ll likely host home showings or open houses. Then select an offer, negotiate, accept and close.</p>
+        </div>
+       
+    </div>
+
+    <div id="post" class="section-three">
+
+      <h1 style="margin-left:170px"> Post your house here</h1>
+      <form action="/home/sell" method="post">
+             
+           <div class="left-form">
+              
+               <lable for="Phone">Phone number</lable>
+               <input id="Phone" required name="Phone" placeholder="phone number"   />
+               <lable for="Price">Price</lable> 
+               <input id="Price" required name="Price" placeholder="price" type="number" />
+               <lable for="PropType">property type</lable>
+               <select id="PropType" required class="select" name="PropType">
+                   <option selected value="apt">apt</option>
+                   <option value="vila">vila</option>
+                   <option value="fok">fok</option>
+
+               </select>
+              
+           </div>
+
+           <div class="right-form">
+               <lable for="Purpose">rent/sell</lable>
+               <select id="Purpose" required class="select" name="Purpose">
+                   <option selected value="sell">sell</option>
+                   <option value="rent">rent</option>
+               </select>
+               <lable for="Image">image</lable> Image
+               <input id="Image" required placeholder="image" name="Image" type="file" />
+               <lable for="Descr">description</lable>
+               <input id="Descr" required placeholder="description" name="Descr"  />
+               <button type="submit">Post</button>
+           </div>
+       </form>
+    </div>
+
+
+
+ 
+
+    
+</div>

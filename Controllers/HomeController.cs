@@ -30,7 +30,10 @@ namespace Akiya.Controllers
 
         public IActionResult Rent()
         {
+
+           
             return View();
+
         }
 
     }

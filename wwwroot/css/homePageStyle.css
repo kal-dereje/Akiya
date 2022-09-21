@@ -8,31 +8,43 @@
     margin-bottom:30px;
 }
 
-    body .home-main input{
-        padding:20px;
+    body .home-main form{
         width: 50%;
-        border-radius:5px;
+       
+    }
+    body .home-main form  input {
+        padding: 20px;
+        width: 100%;
+        border-radius: 5px;
         font-size: 20px;
         font-weight: 400;
-        border:none
+        border: none
     }
 
-    body .home-main input:focus{ 
-  
+    body .home-main form  input:focus {
         background-color: lightcyan;
     }
 
-    body .home-main .search{
+    body .home-main form .search {
         position: relative;
-        left: -60px;
+        top:-45px;
+        left: 97%;
         width: 30px;
-        height:30px
-  
+        height: 30px;
+        border: none;
+        background-color: white
     }
 
-    body .home-main .search:hover{
-        cursor: pointer
-    }
+        body .home-main form .search img {
+            width: 30px;
+            height: 30px;
+
+            
+        }
+
+        body .home-main form .search:hover {
+            cursor: pointer
+        }
 
 body .home-main-two{
     display: flex;
@@ -83,15 +95,17 @@ body .home-main-two{
         font-weight: 400;
     }
 
-    body .home-main-two .lists button {
+    body .home-main-two .lists a {
+        text-decoration:none;
+        color:black;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid #2F7D4F;
         font-size:18px;
         margin-top: 20px;
     }
 
-    body .home-main-two .lists button:hover {
+    body .home-main-two .lists a:hover {
         cursor: pointer;
         background-color: #2F7D4F;
         color: white;
