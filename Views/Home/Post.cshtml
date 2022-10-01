@@ -1,0 +1,61 @@
+﻿@model List<Akiya.Models.Property>
+@{
+    ViewData["Title"] = "Post";
+    Layout = "~/Views/Shared/_CommonLayout.cshtml";
+}
+
+<style>
+    body .buy-container .modify{
+        display:flex;
+        width: 100%;
+        justify-content:space-evenly;
+        margin-top: 10px;
+    }
+
+    body .buy-container .modify a{
+        text-decoration:none;
+        color:white;
+        padding: 10px;
+        border-radius: 3px;
+        font-weight:100;
+        font-size: 16px
+       
+    }
+</style>
+
+
+<div class="buy-container">
+
+    @foreach (var item in Model)
+    {
+    <div style="height:350px"  class="property">
+        <div class="image">
+           <img src="~/images/propertys/@item.Image"/>
+        </div>
+        <h2>&#36 @item.Price</h2>
+        <p>@item.Descr  @item.PropType @item.Purpose <br> phone number: @item.Phone </p>
+        <div class="modify">
+            <a style="background-color: #284A35" href="/edit/index/@item.PropertyId">Update</a>
+            <a style="background-color: #d0372f" href="/home/delete/@item.PropertyId">Delete</a>
+        </div>
+
+    </div>
+    }
+   
+     @if ( !Model.Any() )
+    {
+        <style>
+            .buy-container{
+               justify-content:center;
+               align-items: center;
+            }
+        </style>
+        <h1>You have not post yet!</h1>
+      
+    }
+ 
+  
+</div>
+
+
+    

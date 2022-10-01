@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hilin\\Desktop\\Github projects\\Akiya\\Akiya.csproj": {}
+    "C:\\Users\\kalab dereje\\Documents\\GitHub\\Akiya\\Akiya.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hilin\\Desktop\\Github projects\\Akiya\\Akiya.csproj": {
+    "C:\\Users\\kalab dereje\\Documents\\GitHub\\Akiya\\Akiya.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hilin\\Desktop\\Github projects\\Akiya\\Akiya.csproj",
+        "projectUniqueName": "C:\\Users\\kalab dereje\\Documents\\GitHub\\Akiya\\Akiya.csproj",
         "projectName": "Akiya",
-        "projectPath": "C:\\Users\\hilin\\Desktop\\Github projects\\Akiya\\Akiya.csproj",
-        "packagesPath": "C:\\Users\\hilin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hilin\\Desktop\\Github projects\\Akiya\\obj\\",
+        "projectPath": "C:\\Users\\kalab dereje\\Documents\\GitHub\\Akiya\\Akiya.csproj",
+        "packagesPath": "C:\\Users\\kalab dereje\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kalab dereje\\Documents\\GitHub\\Akiya\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hilin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kalab dereje\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,7 +44,35 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.17, )"
             },
@@ -67,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

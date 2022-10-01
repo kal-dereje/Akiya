@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -13,10 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
-<body>
 
+
+<body>
+   
     <header>
         <div class="logo">
             <img class="logo-img" src="~/images/logo/logo.png"/> 
@@ -24,15 +27,21 @@
         </div>
         <div class="nav">
             <div class="items item1"><a href="/home/index" >Home</a></div>
-            <div class="items item2"><a href="home/" >About us</a></div>
-            <div class="items item3"><a href="home/" >Buy</a></div>
-            <div class="items item4"><a href="/home/sell" >Sell</a></div>
-            <div class="items item5"><a href="/home/rent" >Rent</a></div>
+            <div class="items item2"><a href="#" >About us</a></div>
+            <div class="items item3"><a href="/buy/index" >Buy</a></div>
+            <div class="items item4"><a href="/sell/index" >Sell</a></div>
+            <div class="items item5"><a href="/rent/index" >Rent</a></div>
         </div>
 
         <div class="nav">
-             <div class="items item6"><a href="#">Sign in</a></div>
-             <div class="items item7"><a href="#">Sign up</a></div>
+             <div id="sign-in-btn" class="items item6"><a href="#">Sign in</a></div>
+             
+             <div id="sign-up-btn" class="items item7"><a href="#">Sign up</a></div>
+             
+             <div style="display: none;" id="profile" class="profile">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+             </div>
+             <div style="display: none;" id="sign-out-btn" class="items item7"><a href="/home/signout">Sign out</a></div>
         </div>
     </header>
 
@@ -79,6 +88,165 @@
             <p><i>. Designed by Akiya Team</i></p> 
         </div>
     </footer>
+
+
+    <!--postion absoulte elements-->
+
+    <div id="profile-option" class="profile-option">
+        <a class="post" href="/home/post">My post</a>
+    </div>
+    <div id="modal" class="modal">
+        <div onclick="stopPro(event)" id="login" class="login">
+            <a onclick="closeModal()">x</a>
+            <div class="intro">
+                <h1>Welcome to Akiya</h1>
+                <p>Sign in</p>
+            </div>
+
+            <form action="/home/index" method="post">
+                <label for="email">Email</label>
+                <input id="email" name="email" placeholder="Email" type="email" required />
+                 <label for="password">Password</label>
+                <input id="login-password" name="password" placeholder="password" type="password" required />
+
+                <button type="submit">Sign in</button>
+
+                <p style="font-weight: 100; font-size: 16px">Forget Password?</p>
+            </form>
+        </div>
+
+        <div onclick="stopPro(event)" id="sign-up" class="sign-up">
+            <a onclick="closeModal()">x</a>
+            <div class="intro">
+                <h1>Welcome to Akiya</h1>
+                <p>Sign up</p>
+            </div>
+
+            <form action="/home/signup" method="post">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required />
+                <label for="password">Password</label>
+                <input id="signup-password" name="password" placeholder="password" type="password" required />
+                <label for="ConfirmPassword">Confirm password</label>
+                <input id="ConfirmPassword" onblur="return passwordChecker()"  name="ConfirmPassword" placeholder="Confirm password"  type="password" required />
+
+                <button onclick="return passwordChecker()" type="submit">Sign up</button>
+
+                
+            </form>
+        </div>
+    </div>
+
+ 
+  
+    <script>
+
+        var modal = document.getElementById("modal");
+        var signInBtn = document.getElementById("sign-in-btn");
+        var signUpBtn = document.getElementById("sign-up-btn");
+        var login = document.getElementById("login");
+        var signUp = document.getElementById("sign-up");
+        var profile =document.getElementById("profile");
+        var profileOption =document.getElementById("profile-option");
+        var signOutBtn = document.getElementById("sign-out-btn");
+        var loginPassword = document.getElementById("login-password");
+        var signupPassword = document.getElementById("signup-password");
+        var confirmPassword = document.getElementById("ConfirmPassword");
+
+
+        
+       
+        
+        
+        
+        function passwordChecker(){
+  
+            if(signupPassword.value != confirmPassword.value)
+                    {
+                            alert("password does not match");
+                            return false;
+                    }
+
+            return true;
+        }
+
+
+
+        profile.onclick =()=>{
+            if( profileOption.style.display == "block")
+                profileOption.style.display = "none";
+            else
+                profileOption.style.display = "block";
+        }
+        signOutBtn.onclick =()=>{
+            signOutBtn.style.display = "none";
+              profile.style.display = "none";
+              signUpBtn.style.display = "block";
+              signInBtn.style.display = "block";
+        }
+
+        function closeModal(){
+                close();
+        }
+
+
+        function stopPro(event){
+        event.stopPropagation();
+        }
+
+
+        function close(){
+        modal.style.display  = "none";
+        login.style.display  = "none";
+        signUp.style.display = "none";
+        console.log("kalab")
+        }
+
+        modal.onclick = close;
+        signInBtn.onclick = ()=>{
+        modal.style.display = "flex";
+        login.style.display = "block";
+        console.log("test")
+        }
+        signUpBtn.onclick = ()=>{
+        modal.style.display = "flex";
+        signUp.style.display = "block";
+        console.log("test")
+        }
+        @if(ViewBag.id > 0)
+        {
+            <text>
+                signUpBtn.style.display = "none";
+                signInBtn.style.display = "none";
+                signOutBtn.style.display = "block";
+                profile.style.display = "block";
+           </text>;
+        }
+
+        @if(ViewBag.id < 1)
+        {
+           
+           <text>
+              signOutBtn.style.display = "none";
+              profile.style.display = "none";
+              signUpBtn.style.display = "block";
+              signInBtn.style.display = "block";
+           </text>
+           
+}
+
+    @if( ViewBag.login == "false")
+    {
+            <text>
+                alert("Incorrect username or password please try again");
+            </text>
+        }
+
+
+   </script>
+
+   
+     
    
 </body>
 </html>

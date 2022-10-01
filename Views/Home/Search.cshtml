@@ -1,0 +1,23 @@
+﻿@model List<Akiya.Models.Property>
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_CommonLayout.cshtml";
+}
+
+
+
+<div class="buy-container">
+
+    @foreach (var item in Model)
+    {
+       
+        <div class="property">
+            <div class="image">
+               <img src="~/images/propertys/@item.Image"/>
+            </div>
+            <h2>&#36 @item.Price</h2>
+            <p>@item.Descr  @item.PropType @item.Purpose <br> phone number: @item.Phone </p>
+        </div>
+    }
+   </div>
+

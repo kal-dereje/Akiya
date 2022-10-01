@@ -1,10 +1,8 @@
 ﻿
 @{
-    ViewData["Title"] = "Sell";
+    ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_CommonLayout.cshtml";
 }
-
-
 
 <div class="sell-container">
 
@@ -40,7 +38,7 @@
     <div id="post" class="section-three">
 
       <h1 style="margin-left:170px"> Post your house here</h1>
-      <form action="/home/sell" method="post">
+      <form action="/sell/index" method="post">
              
            <div class="left-form">
               
@@ -79,3 +77,11 @@
 
     
 </div>
+
+ <script>
+     @if(ViewBag.id ==0 || ViewBag.id == null){
+         <text>
+           alert("You nedd to login before you post!!!")
+         </text>
+     }
+ </script>

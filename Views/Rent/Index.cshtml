@@ -1,0 +1,32 @@
+﻿@model List<Akiya.Models.Property>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CommonLayout.cshtml";
+}
+
+<div class="buy-container">
+
+    @foreach (var item in Model)
+    {
+    <div class="property">
+        <div class="image">
+           <img src="~/images/propertys/@item.Image"/>
+        </div>
+        <h2>&#36 @item.Price</h2>
+        <p>@item.Descr  @item.PropType @item.Purpose <br> phone number: @item.Phone </p>
+    </div>
+    }
+   
+     @if ( !Model.Any() )
+    {
+        <style>
+            .buy-container{
+               justify-content:center;
+               align-items: center;
+            }
+        </style>
+        <h1>There are no property for rent!</h1>
+      
+    }
+  
+</div>

@@ -1,0 +1,43 @@
+﻿@model Akiya.Models.Property
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CommonLayout.cshtml";
+}
+
+<div class="update-container">
+    <h1 style="margin-left:170px; color: #284A35"> Update your house here</h1>
+     <form asp-controller="edit" asp-action="index" method="post">
+             
+           <div class="left-form">
+               <input type="hidden" id="PropertyId" name="PropertyId" value="@Model.PropertyId" />
+               <lable for="Phone">Phone number</lable>
+               <input id="Phone" required name="Phone" placeholder="phone number" value="@Model.Phone"  />
+               <lable for="Price">Price</lable> 
+               <input id="Price" required name="Price" placeholder="price" type="number" value="@Model.Price" />
+               <lable for="PropType">property type</lable>
+               <select id="PropType" required class="select" name="PropType">
+                   <option selected value="apt">apt</option>
+                   <option value="vila">vila</option>
+                   <option value="fok">fok</option>
+
+               </select>
+              
+           </div>
+
+           <div class="right-form">
+               <lable for="Purpose">rent/sell</lable>
+               <select id="Purpose" required class="select" name="Purpose">
+                   <option selected value="sell">sell</option>
+                   <option value="rent">rent</option>
+               </select>
+               <lable for="Image">image</lable> Image
+               <input id="Image" required placeholder="image" name="Image" type="file"  value="@Model.Image"/>
+               <lable for="Descr">description</lable>
+               <input id="Descr" required placeholder="description" name="Descr" value="@Model.Descr"  />
+               <button type="submit">Update</button>
+               <a href="/home/post">Cancel</a>
+           </div>
+       </form>
+</div>
+
+

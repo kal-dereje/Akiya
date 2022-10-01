@@ -1,0 +1,52 @@
+﻿body .update-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+
+}
+
+body .update-container  form {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+    body .update-container form div input,
+    body .update-container form div .select {
+        display: block;
+        width: 400px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #6DA986;
+        margin-block: 10px;
+        font-weight: 100;
+        font-size: 18px
+    }
+
+    body .update-container form div button {
+       
+        margin-top: 20px;
+        border: 1px solid;
+        padding: 15px;
+        border-radius: 3px;
+        font-weight: 100;
+        font-size: 16px;
+    }
+
+    body .update-container form div {
+        margin-inline: 10%;
+    }
+
+
+    body .update-container form a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        border-radius: 3px;
+        font-weight: 100;
+        font-size: 16px;
+        background-color: #d0372f;
+        margin-left: 30px
+    }

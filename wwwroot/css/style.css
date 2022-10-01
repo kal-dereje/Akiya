@@ -144,10 +144,19 @@ footer, footer .footer-one .footers {
     }
 
     footer .footer-two {
-        background: #627059;
+        background: white;
         width: 100%;
-        color: white
+        color: black;
+        
     }
+
+    footer .footer-two p,
+     footer .footer-two p i{
+        font-size: 15px
+    }
+
+
+
 
 
 body .modal {

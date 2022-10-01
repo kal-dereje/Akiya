@@ -1,0 +1,47 @@
+﻿
+body .buy-container{
+    display:flex;
+    flex-wrap:wrap;
+    min-height: 60vh;
+    padding: 50px 20px;
+    justify-content:space-evenly;
+    
+}
+
+
+    body .buy-container .property {
+        width: 300px;
+        height: 300px;
+        margin-block: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 0 6px grey;
+       
+        
+    }
+
+    body .buy-container .property:hover{
+        box-shadow: 0 0 10px black;
+    }
+
+body .buy-container .property .image{
+    height:220px;
+    width:300px;
+  
+}
+
+    body .buy-container .property .image img {
+        width: 300px;
+        height: 220px;
+        object-fit:cover
+    }
+
+    body .buy-container .property h1{
+        margin
+        font-weight: 100;
+    }
+
+    body .buy-container .property p {
+        font-weight: 100;
+    }

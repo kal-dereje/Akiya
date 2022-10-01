@@ -28,18 +28,16 @@
     body .home-main form .search {
         position: relative;
         top:-45px;
-        left: 97%;
+        left: 650px;
         width: 30px;
         height: 30px;
         border: none;
-        background-color: white
+        background-color: transparent
     }
 
         body .home-main form .search img {
             width: 30px;
-            height: 30px;
-
-            
+            height: 30px
         }
 
         body .home-main form .search:hover {
@@ -69,20 +67,13 @@ body .home-main-two{
         transition: 0.2s;
     }
 
-    body .home-main-two .list1:hover {
-       box-shadow: 0 0 10px gray;
-       cursor: pointer
-    }
-
-    body .home-main-two .list2:hover {
-        box-shadow: 0 0 10px gray;
-        cursor: pointer
-    }
-
+    body .home-main-two .list1:hover,
+    body .home-main-two .list2:hover,
     body .home-main-two .list3:hover {
-        box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 12px gray;
         cursor: pointer
     }
+
 
     body .home-main-two .lists img{
         width: 80%;
